@@ -10,7 +10,7 @@
 Le compilateur compilo_ptr permet une utilisation basique des pointeurs.
 
 
--------- Pour la compilation: --------
+======== Pour la compilation: ========
 
 Le compilo utilise le fichier moule.asm pour écrire le fichier assembleur final, qui est enregistré dans "okk.asm"
 
@@ -26,7 +26,7 @@ okk.o: okk.asm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Dans ce cas, il faut alors executer `$ ./okk_exe <args>`
 
----------------------------------------
+=======================================
 
 
 >>>>>>>>>>>> FEATURES <<<<<<<<<<<<
