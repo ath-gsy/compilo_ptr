@@ -1,13 +1,6 @@
 from logging.config import IDENTIFIER
 import lark
 
-'''
-ptr : "*" IDENTIFIER                                                         -> value_at_ptr
-| "*" "(" ptr /[+-]/ SIGNED_NUMBER ")"                                       -> ptr_opbin
-| "*" ptr                                                                    -> ptr_to_ptr
-| "&" IDENTIFIER                                                             -> adress_of
-'''
-
 grammaire = lark.Lark(r"""
 exp : SIGNED_NUMBER                                                          -> exp_nombre
 | IDENTIFIER                                                                 -> exp_variable
