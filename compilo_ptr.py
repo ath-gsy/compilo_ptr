@@ -215,10 +215,6 @@ fin{n} : nop
         pop rbx
         mov [rax], rbx
         """
-        """
-        mov rax, [rbx]
-        pop rbx
-        """
 
 def pp_com(c):
     if c.data == "assignation":
