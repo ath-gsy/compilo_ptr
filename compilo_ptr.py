@@ -326,7 +326,6 @@ def vars_prg(p):
     L = set([t.value for t in p.children[0].children])
     C = vars_bcom(p.children[1])
     R = vars_exp(p.children[2])
-    #print("_____" , L, C, R, L | C | R)
     return L | C | R
 ####################
 
