@@ -48,15 +48,6 @@ def asm_exp(e):
         pop rbx
         mov rax, [rbx]
         """
-        """mov rbx, {e.children[0].value}
-        mov rax, [rbx]
-        """
-        """
-        mov rax, {e.children[0].value}
-        push rax
-        pop rbx
-        mov rax, [rbx]
-        """
     elif e.data == "ptr_deref_op":
         P = e.children[0].value
         OPBIN = op[e.children[1].value]
